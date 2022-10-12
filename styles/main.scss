@@ -1,4 +1,4 @@
-@use "variables" as *;
+@use "atoms/_variables" as *;
 
 * {
     box-sizing: border-box;
@@ -7,3 +7,35 @@
 body {
     margin: 0;
 }
+
+/* ------- NAV ------- */
+header {
+    display: flex;
+    flex-direction: row;
+}
+
+nav {
+    display: flex;
+    justify-content: flex-end;
+    justify-content: space-between;
+    ul {
+        display: flex;
+        flex-direction: row;
+        li {
+            list-style: none;
+            a {
+                text-decoration: none;
+            }
+        }
+    }
+    
+}
+
+.hero {
+    background-image: linear-gradient($primary-color, $secondary-color, $accent1);
+    color: white;
+    padding: 4em;
+}
+
+
+
