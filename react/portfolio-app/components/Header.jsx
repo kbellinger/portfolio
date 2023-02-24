@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 export default function Header() {
     return (
@@ -7,11 +8,11 @@ export default function Header() {
         {/* <!-- sticky nav or hidden menu bar --> */}
         <nav>
             <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="projects.html">Projects</a></li>
-                <li><a href="resume.html">Resume</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="contact.html">Contact</a></li>
+                <li><Link to="./Home">Home</Link></li>
+                <li><Link to="projects.html">Projects</Link></li>
+                <li><Link to="resume.html">Resume</Link></li>
+                <li><Link to="about.html">About</Link></li>
+                <li><Link to="contact.html">Contact</Link></li>
             </ul>
         </nav>
     </header>
